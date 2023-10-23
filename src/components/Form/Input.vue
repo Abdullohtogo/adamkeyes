@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <input :type="type" :placeholder="placeholder" />
+        <input :type="type" :placeholder="placeholder" class="input mb-5 w-[450px]"/>
     </div>
 </template>
 

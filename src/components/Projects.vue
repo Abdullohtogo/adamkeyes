@@ -138,5 +138,3 @@
   <br>
   <br>
 </template>
-<script setup>
-</script>

@@ -1,9 +1,12 @@
 <template>
   <br>
-  <nav class="flex xl:gap-[700px] xl:flex-row lg:gap-[400px] lg:flex-row md:gap-[200px] md:flex-row sm:flex-row sm:gap-[50px] xs:flex-col">
+  <nav class="flex xl:gap-[700px] xl:flex-row ">
     <h1 class="text-white text-3xl font-semibold xs:text-center">adamkeyes</h1>
-    <div class="mt-2">
-      <img src="../assets/img/Group%2012.svg" alt="" class="xs:ml-[85px]">
+    <div class="flex gap-8">
+      <router-link to=""><img src="public/github.png" alt=""></router-link>
+      <router-link to=""><img src="public/frontendmentor.png" alt=""></router-link>
+      <router-link to=""><img src="public/linkedIn.png" alt=""></router-link>
+      <router-link to=""><img src="public/twitter.png" alt="" class="mt-[3px]"></router-link>
     </div>
   </nav>
 </template>
