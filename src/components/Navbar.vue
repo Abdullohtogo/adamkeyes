@@ -1,12 +1,11 @@
 <template>
-  <br>
-  <nav class="flex xl:gap-[700px] xl:flex-row ">
-    <h1 class="text-white text-3xl font-semibold xs:text-center">adamkeyes</h1>
-    <div class="flex gap-8">
-      <router-link to=""><img src="public/github.png" alt=""></router-link>
-      <router-link to=""><img src="public/frontendmentor.png" alt=""></router-link>
-      <router-link to=""><img src="public/linkedIn.png" alt=""></router-link>
-      <router-link to=""><img src="public/twitter.png" alt="" class="mt-[3px]"></router-link>
+  <nav class="flex justify-between items-center pb-5 pt-10 xs:flex-col xs:pt-3 sm:flex-row">
+    <h1 class="text-white text-xl sm:text-3xl font-semibold xs:text-center xs:mb-2 ">adamkeyes</h1>
+    <div class="flex gap-8 xs:gap-5 sm:gap-7">
+      <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/Github.svg" class="" alt=""></a>
+      <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/frontendmentor.svg" alt=""></a>
+      <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/linkedIn.svg" alt=""></a>
+      <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/twitter.svg" alt="" class="mt-[3px]"></a>
     </div>
   </nav>
 </template>

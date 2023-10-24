@@ -1,18 +1,18 @@
 <template>
   <section class="bg-[#242424]">
-    <div class="container xl:ml-36" id="contact">
+    <div class="container" id="contact">
       <br />
-      <div class="flex">
+      <div class="flex justify-between lg:flex-row xs:flex-col lg:items-start xs:items-center">
         <div>
-          <h1 class="text-white text-[88px]">Contact</h1>
-          <p class="text-[18px] w-[445px] text-white">
+          <h1 class="text-white md:text-[88px] lg:text-start xs:text-[72px] xs:text-center">Contact</h1>
+          <p class="text-[18px] sm:w-[445px] sm:text-center text-white xs:w-[100%] xs:text-center">
             I would love to hear about your project and how I
             could help. Please fill in the form, and I’ll get
             back to you as soon as possible.
           </p>
         </div>
-        <form class="ml-52 mt-6 flex flex-col">
-          <FormInput type="password" placeholder="NAME" />
+        <form class="lg:mt-6 flex flex-col sm:w-full  xs:items-center xs:mt-24">
+          <FormInput type="text" placeholder="NAME" />
           <br />
           <FormInput
               type="email"
@@ -22,38 +22,23 @@
           <textarea
               type="text"
               placeholder="Message"
-              class="input w-[450px] mb-5"
+              class="input sm:w-[450px] mb-5 xs:w-[350px]"
           ></textarea>
-          <div class="ml-[350px]">
-            <button
-                type="submit"
-                class="border-none flex flex-col text-white xl:mt-[40px] text-[16px]"
-            >
-              CONTACT ME
-            </button>
-            <div
-                class="bg-green w-[95px] h-[2px] mt-2 hover:text-green-400"
-            ></div>
+          <div class="place-self-end">
+            <BaseButton text="SEND MESSAGE"/>
           </div>
         </form>
       </div>
       <div
-          class="border-solid border-gray-300 border-[1px] w-[104%] mt-10 mb-16"
+          class="border-solid border-gray-300 border-[1px] w-[100%] mt-10 mb-16"
       ></div>
-      <footer
-          class="flex xl:gap-[700px] xl:flex-row lg:gap-[400px] lg:flex-row md:gap-[200px] md:flex-row sm:flex-row sm:gap-[50px] xs:flex-col"
-      >
-        <h1
-            class="text-white text-3xl font-semibold xs:text-center"
-        >
-          adamkeyes
-        </h1>
-        <div class="mt-2">
-          <img
-              src="./assets/img/Group%2012.svg"
-              alt=""
-              class="xs:ml-[85px]"
-          />
+      <footer class="flex justify-between items-center pt-10 xs:flex-col xs:pt-3 sm:flex-row">
+        <h1 class="text-white text-xl sm:text-3xl font-semibold xs:text-center xs:mb-2 ">adamkeyes</h1>
+        <div class="flex gap-8 xs:gap-5 sm:gap-7">
+          <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/Github.svg" class="" alt=""></a>
+          <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/frontendmentor.svg" alt=""></a>
+          <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/linkedIn.svg" alt=""></a>
+          <a href="#" class="xs:w-[18px] sm:w-full"><img src="public/twitter.svg" alt="" class="mt-[3px]"></a>
         </div>
       </footer>
       <br />
@@ -61,5 +46,7 @@
   </section>
 </template>
 <script setup>
+import BaseButton from "@components/Base/Button.vue";
+
 import FormInput from '@components/Form/Input.vue'
 </script>

@@ -1,10 +1,10 @@
 <template>
     <main class="bg-black">
-        <div class="xl:ml-36 lg:ml-16 md:ml-10 sm:ml-5 xs:ml-2">
+        <div class="container">
             <Navbar/>
-            <StartedPage/>
+<!--            <StartedPage/>-->
 <!--            <FormInput type="password" placeholder="NAME" />-->
-            <AbilitiesShowcase/>
+<!--            <AbilitiesShowcase/>-->
             <Projects />
         </div>
       <ContactMe/>

@@ -5,98 +5,86 @@
 @tailwind utilities;
 
 @layer components {
-    .btn-primary {
-        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-    }
-    .bg-green{
-        background: #4EE1A0;
-    }
-    a:hover{
-        transition: 0.3s;
-        color: #4EE1A0;
-    }
-    .gray {
-        color: #D9D9D9;
-    }
-    .bitmap1{
-        width: 545px;
-        height: 400px;
-        background-image: url("./assets/img/Bitmap.png");
-        margin-bottom: 20px;
-    }
-    .bitmap2{
-        width: 545px;
-        height: 400px;
-        background-image: url("./assets/img/Bitmap (1).png");
-        margin-bottom: 20px;
-    }
-    .bitmap3{
-        width: 545px;
-        height: 400px;
-        background-image: url("./assets/img/Bitmap (2).png");
-        margin-bottom: 20px;
-    }
-    .bitmap4{
-        width: 545px;
-        height: 400px;
-        background-image: url("./assets/img/Bitmap (3).png");
-        margin-bottom: 20px;
-    }
-    .bitmap5{
-        width: 545px;
-        height: 400px;
-        background-image: url("./assets/img/Bitmap (4).png");
-        margin-bottom: 20px;
-    }
-    .bitmap6{
-        width: 545px;
-        height: 400px;
-        background-image: url("./assets/img/Bitmap (5).png");
-        margin-bottom: 20px;
-    }
-    .bitmap6:hover{
-        background: rgba(0, 0, 0, 1%);
-        transition: 0.4s;
-    }
-    .bitmap5:hover{
-        background: rgba(0, 0, 0, 1%);
-        transition: 0.4s;
-    }
-    .bitmap4:hover{
-        background: rgba(0, 0, 0, 1%);
-        transition: 0.4s;
-    }
-    .bitmap3:hover{
-        background: rgba(0, 0, 0, 1%);
-        transition: 0.4s;
-    }
-    .bitmap2:hover{
-        background: rgba(0, 0, 0, 1%);
-        transition: 0.4s;
-    }
-    .bitmap1:hover{
-        background: rgba(0, 0, 0, 0);
-        transition: 0.4s;
-    }
-    .bitmap:hover .none{
-        display: block;
-    }
-    .none{
-        display: none;
-    }
-    .input{
-        border: none;
-        border-bottom: 0.0625rem solid hsl(0,0%,100%);
-        background-color: transparent;
-        font-weight: 500;
-        color: #d9d9d9;
-        text-transform: uppercase;
-        line-height: 1.625;
-        letter-spacing: -.01388rem;
-        padding: 0 1.5rem 1.06rem;
-        outline: none;
-    }
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .container{
+    margin: 0 auto;
+  }
+  .bg-green {
+    background: #4ee1a0;
+  }
+  a:hover {
+    transition: 0.3s;
+    color: #4ee1a0;
+  }
+  .gray {
+    color: #d9d9d9;
+  }
+
+  .bitmap {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bitmap1 {
+    background-image: url('public/project_img1.png');
+  }
+  .bitmap2 {
+    background-image: url('public/project_img2.png');
+  }
+  .bitmap3 {
+    background-image: url('public/project_img3.png');
+  }
+  .bitmap4 {
+    background-image: url('public/project_img4.png');
+  }
+  .bitmap5 {
+    background-image: url('public/project_img5.png');
+  }
+  .bitmap6 {
+    background-image: url('public/project_img6.png');
+  }
+  .bitmap6:hover {
+    background: rgba(0, 0, 0, 75%);
+    transition: 0.4s;
+  }
+  .bitmap5:hover {
+    background: rgba(0, 0, 0, 75%);
+  }
+  .bitmap4:hover {
+    background: rgba(0, 0, 0, 75%);
+  }
+  .bitmap3:hover {
+    background: rgba(0, 0, 0, 75%);
+  }
+  .bitmap2:hover {
+    background: rgba(0, 0, 0, 75%);
+  }
+  .bitmap1:hover {
+    background: rgba(0, 0, 0, 75%);
+  }
+
+  .bitmap:hover .none {
+    display: block;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .input {
+    border: none;
+    border-bottom: 0.0625rem solid hsl(0, 0%, 100%);
+    background-color: transparent;
+    font-weight: 500;
+    color: #d9d9d9;
+    text-transform: uppercase;
+    line-height: 1.625;
+    letter-spacing: -0.01388rem;
+    padding: 0 1.5rem 1.06rem;
+    outline: none;
+  }
 }
-main{
-    font-family: 'Space Grotesk', sans-serif;
+main {
+  font-family: 'Space Grotesk', sans-serif;
 }
