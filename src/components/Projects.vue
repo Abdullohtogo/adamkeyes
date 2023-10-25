@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="flex justify-between mb-20">
-      <h1 class="text-white lg:text-[88px] xs:text-5xl">Projects</h1>
+      <h1 class="text-white lg:text-[88px] sm:text-5xl xs:text-4xl xs:mt-2">Projects</h1>
       <div class="mt-3">
         <a>
           <BaseButton text="CONTACT ME"/>
@@ -39,42 +39,42 @@ const project = {
 
 const projects = [
   {
-    img: '/project_img1.png',
+    img: '/images/projects/project_img1.png',
     title: 'DESIGN PORTFOLIO',
     languages: ['HTML', 'CSS'],
     projectUrl: 'https://example.com',
     codeUrl: 'https://example.com',
   },
   {
-    img: '/project_img2.png',
+    img: '/images/projects/project_img2.png',
     title: 'TODO WEB APP',
     languages: ['HTML', 'CSS',"JAVASCRIPT"],
     projectUrl: 'https://example.com',
     codeUrl: 'https://example.com',
   },
   {
-    img: '/project_img3.png',
+    img: '/images/projects/project_img3.png',
     title: 'MEMORY GAME',
     languages: ['HTML', 'CSS',"JAVASCRIPT"],
     projectUrl: 'https://example.com',
     codeUrl: 'https://example.com',
   },
   {
-    img: '/project_img4.png',
+    img: '/images/projects/project_img4.png',
     title: 'E-LEARNING LANDING PAGE',
     languages: ['HTML', 'CSS'],
     projectUrl: 'https://example.com',
     codeUrl: 'https://example.com',
   },
   {
-    img: '/project_img5.png',
+    img: '/images/projects/project_img5.png',
     title: 'ENTERTAINMENT WEB APP',
     languages: ['HTML', 'CSS', "JAVASCRIPT"],
     projectUrl: 'https://example.com',
     codeUrl: 'https://example.com',
   },
   {
-    img: '/project_img6.png',
+    img: '/images/projects/project_img6.png',
     title: 'ART GALLERY SHOWCASE',
     languages: ['HTML', 'CSS', "JAVASCRIPT"],
     projectUrl: 'https://example.com',
