@@ -67,7 +67,9 @@
   .bitmap:hover .none {
     display: block;
   }
-
+  .group-button:hover .button-text{
+    color: #4EE1A0;
+  }
   .none {
     display: none;
   }

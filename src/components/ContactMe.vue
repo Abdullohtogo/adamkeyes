@@ -23,9 +23,9 @@
             <textarea
                 type="text"
                 placeholder="Message"
-                class="input sm:w-[450px] mb-5 xs:w-[350px] resize-none"
+                class="input mb-5 xs:w-[100%] resize-none"
             ></textarea>
-            <div class="md:place-self-end xs:place-self-center">
+            <div class="place-self-end sm:mr-0 xs:mr-1 lg:mr-0">
               <BaseButton text="SEND MESSAGE"/>
             </div>
           </form>
@@ -33,8 +33,8 @@
 
       </div>
       <div
-          class="border-solid border-gray-300 border-[1px] w-[100%] mt-10 mb-16"
-      ></div>
+        class="border-solid border-gray-300 border-[1px] w-[100%] mt-16 mb-10"
+    ></div>
       <footer class="flex justify-between items-center pt-10 xs:flex-col xs:pt-3 sm:flex-row">
         <h1 class="text-white text-xl sm:text-3xl font-semibold xs:text-center xs:mb-2 ">adamkeyes</h1>
         <div class="flex gap-8 xs:gap-5 sm:gap-7">

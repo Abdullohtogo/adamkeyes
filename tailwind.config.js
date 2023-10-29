@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: 'class',
@@ -16,12 +18,12 @@ module.exports = {
           100: "#242424"
         },
         gray: {
-          DEFAULT: "#d9d9d9"
+          DEFAULT: "#ffffff"
         }
       }
     },
     screens:{
-      xs:'260px',
+      xs:'320px',
       sm:'540px',
       md:'710px',
       lg:'940px',
@@ -31,5 +33,15 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant, theme }) => {
+      const groups = theme('groups') || []
+
+      groups.forEach((group) => {
+        addVariant(`group-${group}-hover`, () => {
+          return `:merge(.group-${group}):hover &`
+        })
+      })
+    })
+  ],
 };
